@@ -1,11 +1,11 @@
 <template>
-  <header class="h-screen bg-blue-300">
+  <header class="h-screen md:pl-sash165 pr-10 md:pr-sash165">
     <NavBar class=""> </NavBar>
     <section
-      class=" relative  h-screen   font-serif fle grid md:grid-cols-12  items-center"
+      class=" relative   font-serif fle grid md:grid-cols-12  items-center"
     >
       <div
-        class="heading lg:col-span-8 lg:text-justify text-center md:col-span-12 lg:mt-12s "
+        class="heading lg:col-span-8 lg:text-justify text-center md:col-span-12 lg:mt-12s pt-20 "
       >
         <div
           class="main-text text-sashblack text-mobiletext md:text-35 lg:text-48px lg:leading-112  ip:text-6xls font-black leading-tight"
@@ -24,7 +24,10 @@
         </div>
 
         <div class="download-options flex items-center md:mt-8">
-          <a href="#">
+          <a
+            href="#"
+            class="transform hover:scale-125 transition-all duration-100"
+          >
             <img class="mr-4" src="../../assets/svg/ios.svg" alt=""
           /></a>
           <a
@@ -52,6 +55,7 @@ export default {
 
 <style scoped lang="scss">
 section {
+  height: 90vh;
   span {
     cursor: pointer;
     position: relative;

@@ -26,17 +26,23 @@ module.exports = {
         mobiletext: "1.8rem",
         51: "3.20571875rem",
         35: "3.2rem",
+        "30px": "30px",
         "48px": "48px",
+        "40px": "40px",
         iphero: "3.7rem",
         maintext: "1.6rem"
       },
       colors: {
+        footer: "#1C1C19",
         sashblack: "#303037",
         sashblack100: "#636564",
         sashgray: "#A7A9C0",
         sashgreen: "#30C684",
         sashborder: "#E3DFDF",
-        sashlightblue: "#F5F8FC"
+        sashlightblue: "#F5F8FC",
+        sashgray200: "#425466",
+        sashgray300: "#737B7D",
+        footersm: "#444441"
       },
       letterSpacing: {
         23: "0.014375rem"
@@ -53,8 +59,11 @@ module.exports = {
         25: "25px",
         26: "26px",
         28: "28px",
+        40: "40px",
         30: "30px",
+        36: "36px",
         51: "49px",
+        sub: "51px",
         58: "58px",
         88: "88px",
         96: "96.6%",
@@ -62,6 +71,8 @@ module.exports = {
         112: "112.1%"
       },
       spacing: {
+        sash10: "10px",
+        sash11: "11px",
         sash12: "12px",
         heromobile: "12rem",
         sash133: "13px",
@@ -115,6 +126,7 @@ module.exports = {
         sash795: "79.59px",
         sash69: "69.81px",
         sash104: "104.6px",
+        sash160: "160px",
         sash165: "165px",
 
         7: "7rem",
@@ -125,14 +137,18 @@ module.exports = {
         21: "24rem",
         18: "26rem",
         22: "26rem",
+        23: "23px",
         35: "35px",
         37: "37px",
         42: "42px",
+        44: "44px",
         49: "49px",
         50: "50px",
         51: "48px",
         54: "54px",
         65: "64px",
+        69: "69px",
+        120: "120px",
         121: "100px",
         card: "470px"
       }

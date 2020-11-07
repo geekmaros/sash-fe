@@ -1,344 +1,282 @@
 <template>
-  <main
-    class="relative h-auto w-full bg-sashlightblues -mt-6 mt-56s lg:-mt-8 md:-mt-24"
-  >
-    <div class="bender hidden">
-      <img src="../assets/svg/bendmd.svg" alt="Bender" />
-    </div>
-    <div class="absolute hero hidden px-5 -mt-13">
-      <img
-        width="900"
-        src="../assets/svg/desktopheromobile.svg"
-        class="block md:hidden"
-        alt="Hero SVG"
-      />
-    </div>
-    <div class="flex relative absolute justify-center items-center">
-      <DirtyParticle
-        class="absolute lg:mt-32  lg:mr-20 lg:right-auto right-0 -mr-32 md:-mr-7 "
-      />
-      <!--      <img src="../assets/svg/particlemd.svg.svg" alt="" />-->
-    </div>
-    <div class="particle absolute relative -ml-20 -mt-10 md:-ml-12">
-      <Particles class="absolute" />
-    </div>
-    <div
-      class="card-wrapper grids pb-12 md:pb-24 lg:pb-20  bg-sashlightblue  md:bg-transparent lg:bg-transparent lg:grid-cols-4 md:grid-cols-2 gap-4 top-0 mt-7 lg:mt-32 md:mt-24  lg:mr-8 md:pr-8 md:pl-10 lg:pl-20"
-    >
-      <header
-        class="col header md:pr-0 md:pl-0 lg:mt-10 md:mt-32 mb-42 md:mb-sash28 lg:mb-0"
-      >
-        <div class="stroke flex justify-center items-center">
-          <svg
-            width="121"
-            class="mb-sash17 hidden md:block"
-            height="11"
-            viewBox="0 0 121 11"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M115.5 0H5.5C2.46243 0 0 2.46243 0 5.5C0 8.53757 2.46243 11 5.5 11H115.5C118.538 11 121 8.53757 121 5.5C121 2.46243 118.538 0 115.5 0Z"
-              fill="#30C684"
-            />
-          </svg>
-          <svg
-            class="block md:hidden mb-sash17"
-            width="57"
-            height="5"
-            viewBox="0 0 57 5"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M54.4999 0H2.49988C1.11917 0 -0.00012207 1.11929 -0.00012207 2.5C-0.00012207 3.88071 1.11917 5 2.49988 5H54.4999C55.8806 5 56.9999 3.88071 56.9999 2.5C56.9999 1.11929 55.8806 0 54.4999 0Z"
-              fill="#30C684"
-            />
-          </svg>
-        </div>
+  <section class="relative h-full w-full pt-27 pb-48">
+    <div class="top">
+      <div class="stroke w-full flex justify-center items-center">
+        <svg
+          width="121"
+          height="11"
+          viewBox="0 0 121 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M115.5 0H5.5C2.46243 0 0 2.46243 0 5.5C0 8.53757 2.46243 11 5.5 11H115.5C118.538 11 121 8.53757 121 5.5C121 2.46243 118.538 0 115.5 0Z"
+            fill="#30C684"
+          />
+        </svg>
+      </div>
 
-        <div
-          class="main-text text-center md:leading-51  text-sashblack text-lg md:text-sub  font-black leading-11"
-        >
-          <h1>Merchants struggle to convert prospects</h1>
-          <h1>and manage their business on</h1>
-          <h1>social media & messaging apps.</h1>
-        </div>
-        <div
-          class="sub-text text-center leadin-30px text-sashgray text-15 md:text-xl  mt-sash12"
-        >
-          <p>
-            Move your business conversations over to convert
-          </p>
-          <p>
-            faster and improve productivity.
-          </p>
-        </div>
-      </header>
-      <div
-        class="card mr-10 ml-10 md:ml-0 md:mr-0 transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer bg-white pt-49 shadow-lg rounded-lg text-center "
+      <h1
+        class="text-40px leading-sub text-sashblack md:text-center font-black mt-sash11 "
       >
-        <div class="main font-black text-28 leading-96">
-          <h1>Conversational</h1>
-          <h1>Commerce:</h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          Do more within DM
-        </h4>
-        <div class="summary text-sashblack text-sm  mt-sash19 mb-sash25">
-          <p>
-            Delight your customers with a seamless
-          </p>
-          <p>messaging, ordering, check-out and</p>
-          <p>payment experience.</p>
-        </div>
-        <div
-          class="flex  justify-center items-center md:pl-sash71 md:pr-sash69 pl-sash435 pr-sash436 pb-sash492 mb-10"
-        >
-          <!--          <img src="../assets/svg/convercommmd.svg" alt="" />-->
-          <img src="../assets/svg/1.svg" alt="" />
-        </div>
-      </div>
-      <div
-        class="card mr-10 ml-10 md:ml-0 md:mr-0 transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer md:-translate-y-12 shadow-lg  rounded-lg bg-white pt-49  text-center "
+        What can you do with Sash?
+      </h1>
+      <p
+        class="text-2xl leading-30 md:text-center text-sashgray200 max-w-2xl mx-auto mt-3"
       >
-        <div class="main font-black text-28 leading-96">
-          <h1>Social</h1>
-          <h1>Discovery:</h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          Grow Organically
-        </h4>
-        <div
-          class="summary text-sashblack text-sm  mt-sash19 md:mb-sash495 mb-sash342"
-        >
-          <p>
-            A new way for your customers and
-          </p>
-          <p>their friends to discover and promote your</p>
-          <p>business & products.</p>
-        </div>
-        <div
-          class="flex justify-center items-center mb-10 md:pl-sash49 md:pr-sash495 pl-sash305 pr-sash305 pb-sash349 "
-        >
-          <img src="../assets/svg/sd.svg" class="hidden md:block" alt="" />
-          <img src="../assets/svg/sd.svg" class="hidden   md:hidden" alt="" />
-          <img src="../assets/svg/sd.svg" class="block md:hidden" alt="" />
-        </div>
-      </div>
-      <div
-        class="card mr-10 ml-10 md:ml-0 md:mr-0 transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer shadow-lg  rounded-lg bg-white pt-49  text-center "
-      >
-        <div class="main font-black text-28 leading-96">
-          <h1>Delivery Options</h1>
-          <h1>& FAQs:</h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          Take care of trivial
-        </h4>
-        <div
-          class="summary text-sashblack text-sm  mt-sash19 md:mb-sash245 mb-sash208"
-        >
-          <p>
-            Set your delivery options, and provide
-          </p>
-          <p>ready-made answers to common questions</p>
-          <p>to speed-up conversion.</p>
-        </div>
-        <div
-          class="flex justify-center items-center md:mb-sash79 mb-10 md:pl-sash341 md:pr-sash347 pl-sash208 pr-sash221 pb-sash404"
-        >
-          <!--          <img src="../assets/svg/deliverymd.svg" alt="" />-->
-          <img src="../assets/svg/3.svg" alt="" />
-        </div>
-      </div>
-      <div
-        class="cards mr-10 ml-10 md:ml-0 md:mr-0 transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer md:-translate-y-12 shadow-lg  rounded-lg bg-white pt-49  text-center "
-      >
-        <div class="main font-black text-28 leading-96">
-          <h1>Product</h1>
-          <h1>Catalogue:</h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          Showcase your hustle
-        </h4>
-        <div
-          class="summary text-sashblack text-sm  mt-sash19 md:mb-sash435 md:mb-sash208 mb-sash363"
-        >
-          <p>
-            Empower prospecting customers to
-          </p>
-          <p>browse through your product range</p>
-          <p>and shop digitally.</p>
-        </div>
-        <div
-          class="flex justify-center items-center mb-10 md:pl-sash538 md:pr-sash528 pl-sash457 pr-sash208 pb-sash363 "
-        >
-          <!--          <img src="../assets/svg/productmd.svg" alt="" />-->
-          <img src="../assets/svg/4.svg" alt="" />
-        </div>
-      </div>
-      <div
-        class="card mr-10 ml-10 md:ml-0 md:mr-0 transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer transform lg:-translate-y-24 shadow-lg  rounded-lg bg-white pt-49  text-center "
-      >
-        <div class="main font-black text-28 leading-96">
-          <h1>Fulfilment</h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          The Power of “To go”
-        </h4>
-        <div
-          class="summary text-sashblack text-sm  mt-sash19 md:mb-sash25 mb-sash296"
-        >
-          <p>
-            Fulfil orders as they come in,
-          </p>
-          <p>while on the move.</p>
-        </div>
-        <div
-          class="flex justify-center items-center mb-10 md:pl-sasash38sh351 md:pr-sash342 pl-sash229 pr-sash203 pb-sash654"
-        >
-          <!--          <img src="../assets/svg/fulfilmentmd.svg" alt="" />-->
-          <img src="../assets/svg/5.svg" alt="" />
-        </div>
-      </div>
-      <div
-        class="card  mr-10 ml-10 md:ml-0 md:mr-0 clearfix:after transform transition-all duration-500 ease-in-out  md:hover:scale-105 cursor-pointer md:-translate-y-12 lg:-translate-y-40 shadow-lg  rounded-lg bg-white pt-49  text-center "
-      >
-        <div class="main font-black text-28 leading-96">
-          <h1>Reports</h1>
-          <h1>
-            Analytics:
-          </h1>
-        </div>
-        <h4 class="text-sashgray text-lg mt-sash6 font-medium  leading-23">
-          Your digital business associate
-        </h4>
-        <div
-          class="summary text-sashblack text-sm  mt-sash19 md:mb-sash492 mb-sash347"
-        >
-          <p>
-            Stay on top of your business
-          </p>
-          <p>numbers at a glance.</p>
-        </div>
-        <div
-          class="flex justify-center items-center mb-10 md:pl-sash631 md:pr-sash635 pl-sash388 pr-sash404 pb-sash444"
-        >
-          <!--          <img src="../assets/svg/report.svg" alt="" />-->
-          <img src="../assets/svg/6.svg" alt="" />
-        </div>
-      </div>
+        Convert faster and improve productivity when you move your business
+        conversations over from social media DMs.
+      </p>
     </div>
-  </main>
+    <main class="mt-69">
+      <div
+        class="tile-1 w-full flexs justify-center items-center grid grid-cols-12"
+      >
+        <div class="image-wrapper col-span-6 justify-self-end mr-7">
+          <img class="" src="../assets/images/tile1.png" alt="" />
+        </div>
+        <div class="tile-text text-left col-span-6">
+          <svg
+            width="39"
+            height="36"
+            viewBox="0 0 39 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="26.6923" cy="11.923" r="11.6923" fill="#00BEFF" />
+            <path
+              d="M24.6154 8.69226H4.92308C3.56554 8.69226 2.46154 9.79626 2.46154 11.1538V25.923C2.46154 27.2806 3.56554 28.3846 4.92308 28.3846H8.61538V33.0209L16.3409 28.3846H24.6154C25.9729 28.3846 27.0769 27.2806 27.0769 25.923V11.1538C27.0769 9.79626 25.9729 8.69226 24.6154 8.69226ZM24.6154 25.923H15.6591L11.0769 28.6713V25.923H4.92308V11.1538H24.6154V25.923Z"
+              fill="black"
+            />
+            <path
+              d="M8.61538 14.8461H20.9231V17.3076H8.61538V14.8461ZM8.61538 19.7691H17.2308V22.2307H8.61538V19.7691Z"
+              fill="black"
+            />
+          </svg>
+          <p
+            class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+          >
+            DO MORE WITH DIRECT MESSAGING
+          </p>
+          <h1
+            class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+          >
+            Conversational Commerce
+          </h1>
+          <p
+            class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+          >
+            Delight your customers with a seamless messaging, ordering,
+            check-out and payment experience.
+          </p>
+        </div>
+      </div>
+      <div
+        class="tile-2 mt-8s w-full flexs justify-center items-center grid grid-cols-12"
+      >
+        <div class="tile-text text-right  justify-self-end col-span-6 mr-8">
+          <div class="icon flex justify-end">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="27.3077" cy="11.9231" r="11.6923" fill="#30C684" />
+              <path
+                d="M14.1539 32.0781H16.6154C16.6154 24.6123 10.5415 18.5385 3.07693 18.5385V21C9.184 21 14.1539 25.9698 14.1539 32.0781Z"
+                fill="black"
+              />
+              <path
+                d="M9.23077 32.0782H11.6923C11.6923 27.3274 7.8277 23.4615 3.07693 23.4615V25.9231C6.47016 25.9231 9.23077 28.6837 9.23077 32.0782Z"
+                fill="black"
+              />
+              <path
+                d="M4.92308 32.077C5.94268 32.077 6.76924 31.2504 6.76924 30.2308C6.76924 29.2112 5.94268 28.3846 4.92308 28.3846C3.90348 28.3846 3.07693 29.2112 3.07693 30.2308C3.07693 31.2504 3.90348 32.077 4.92308 32.077Z"
+                fill="black"
+              />
+              <path
+                d="M25.2308 11.1539H5.53847C4.18093 11.1539 3.07693 12.2579 3.07693 13.6154V16.1409C3.91385 16.1717 4.73723 16.2566 5.53847 16.408V13.6154H25.2308V29.6154H18.7458C18.8972 30.4166 18.9809 31.24 19.0129 32.0769H25.2308C26.5883 32.0769 27.6923 30.9729 27.6923 29.6154V13.6154C27.6923 12.2579 26.5883 11.1539 25.2308 11.1539Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <p
+            class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+          >
+            GROW ORGANICALLY
+          </p>
+          <h1
+            class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+          >
+            Social Discovery
+          </h1>
+          <p
+            class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+          >
+            A new way for your customers and their friends to discover and
+            promote your business & products.
+          </p>
+        </div>
+        <div class="image-wrapper col-span-6 justify-self-start ml-10">
+          <img class="" src="../assets/images/tile2.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="tile-3 w-full flexs justify-center items-center grid grid-cols-12"
+      >
+        <div class="image-wrapper col-span-6 justify-self-end mr-7">
+          <img class="" src="../assets/images/tile3.png" alt="" />
+        </div>
+        <div class="tile-text text-left col-span-6">
+          <svg
+            width="39"
+            height="36"
+            viewBox="0 0 39 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="26.6923" cy="11.9231" r="11.6923" fill="#00BEFF" />
+            <path
+              d="M6.15385 33.3077H23.3846C24.7422 33.3077 25.8462 32.2037 25.8462 30.8462V17.3077C25.8462 16.6271 25.296 16.0769 24.6154 16.0769H20.9231V14.8462C20.9231 11.4529 18.1625 8.69231 14.7692 8.69231C11.376 8.69231 8.61538 11.4529 8.61538 14.8462V16.0769H4.92308C4.24246 16.0769 3.69231 16.6271 3.69231 17.3077V30.8462C3.69231 32.2037 4.79631 33.3077 6.15385 33.3077ZM11.0769 14.8462C11.0769 12.8105 12.7335 11.1539 14.7692 11.1539C16.8049 11.1539 18.4615 12.8105 18.4615 14.8462V16.0769H11.0769V14.8462ZM6.15385 18.5385H8.61538V21H11.0769V18.5385H18.4615V21H20.9231V18.5385H23.3846L23.3871 30.8462H6.15385V18.5385Z"
+              fill="black"
+            />
+          </svg>
+
+          <p
+            class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+          >
+            SHOWCASE YOUR HUSTLE
+          </p>
+          <h1
+            class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+          >
+            Product Catalogue
+          </h1>
+          <p
+            class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+          >
+            Empower prospecting customers to browse through your product range
+            and shop digitally.
+          </p>
+        </div>
+      </div>
+      <div
+        class="tile-4 w-full flexs justify-center items-center grid grid-cols-12"
+      >
+        <div class="tile-text text-right  justify-self-end col-span-6 mr-8">
+          <div class="icon flex justify-end">
+            <svg
+              width="39"
+              height="37"
+              viewBox="0 0 39 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="27.3077" cy="12.4231" r="11.6923" fill="#00BEFF" />
+              <path
+                d="M25.2308 10.4231H5.53847C4.18093 10.4231 3.07693 11.5271 3.07693 12.8846V15.3462C3.07693 16.252 3.57539 17.0385 4.3077 17.4656V30.1154C4.3077 31.4729 5.4117 32.5769 6.76924 32.5769H24C25.3575 32.5769 26.4615 31.4729 26.4615 30.1154V17.4656C27.1939 17.0385 27.6923 16.252 27.6923 15.3462V12.8846C27.6923 11.5271 26.5883 10.4231 25.2308 10.4231ZM5.53847 12.8846H25.2308L25.2332 15.3462H25.2308H5.53847V12.8846ZM6.76924 30.1154V17.8077H24L24.0025 30.1154H6.76924Z"
+                fill="black"
+              />
+              <path
+                d="M10.4615 20.2692H20.3077V22.7308H10.4615V20.2692Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <p
+            class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+          >
+            THE POWER OF “TO GO”
+          </p>
+          <h1
+            class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+          >
+            Fulfilment
+          </h1>
+          <p
+            class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+          >
+            Fulfilment
+          </p>
+        </div>
+        <div class="image-wrapper col-span-6 justify-self-start ml-10">
+          <img class="" src="../assets/images/tile4.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="tile-3 w-full flexs justify-center items-center grid grid-cols-12"
+      >
+        <div class="image-wrapper col-span-6 justify-self-end mr-7">
+          <img class="" src="../assets/images/tile5.png" alt="" />
+        </div>
+        <div class="tile-text text-left col-span-6">
+          <svg
+            width="39"
+            height="37"
+            viewBox="0 0 39 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="26.6923" cy="12.423" r="11.6923" fill="#00BEFF" />
+            <path
+              d="M14.7692 9.19226C7.98277 9.19226 2.46154 14.7135 2.46154 21.5C2.46154 28.2864 7.98277 33.8076 14.7692 33.8076C21.5557 33.8076 27.0769 28.2864 27.0769 21.5C27.0769 14.7135 21.5557 9.19226 14.7692 9.19226ZM24.5305 20.2692H16V14.1153V11.7387C20.4443 12.2963 23.9729 15.8249 24.5305 20.2692ZM4.92308 21.5C4.92308 16.4883 8.69046 12.348 13.5385 11.7387V14.1153V21.5C13.5385 21.6464 13.5729 21.788 13.6234 21.9246C13.6394 21.964 13.6554 22.0009 13.6751 22.039C13.6935 22.076 13.7022 22.1166 13.7255 22.1535L18.8972 30.428C17.6394 31.0113 16.2437 31.3461 14.7692 31.3461C9.34031 31.3461 4.92308 26.9289 4.92308 21.5ZM20.9871 29.1258L16.9908 22.7307H24.5305C24.208 25.2993 22.8985 27.5652 20.9871 29.1258Z"
+              fill="black"
+            />
+          </svg>
+
+          <p
+            class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+          >
+            YOUR DIGITAL BUSINESS ASSOCIATE
+          </p>
+          <h1
+            class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+          >
+            Report & Analytics
+          </h1>
+          <p
+            class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+          >
+            Stay on top of your business numbers at a glance.
+          </p>
+        </div>
+      </div>
+    </main>
+  </section>
 </template>
 
 <script>
-import DirtyParticle from "@/components/UIElements/DirtyParticle";
-import Particles from "@/components/UIElements/Particles";
-
 export default {
   name: "MainContent",
-  components: { Particles, DirtyParticle }
+  components: {}
 };
 </script>
 
 <style scoped lang="scss">
-main {
+section {
   position: relative;
-  //@media screen and (width: 375px) {
-  //  margin-top: 12rem;
-  //}
+
   @media screen and (max-width: 767px) {
-    background: url("../assets/svg/bendmobile.svg");
+    //background: url("../assets/svg/bendmobile.svg");
   }
   //mobile hero
   @media screen and (min-width: 768px) {
     background-size: cover;
     height: 100%;
     object-fit: cover;
-    background: url("../assets/svg/bendmd.svg") no-repeat center center;
+    //background: url("../assets/svg/bendmd.svg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-repeat: no-repeat;
   }
   @media screen and (min-width: 1025px) {
-    background: url("../assets/svg/bend.svg");
+    background: url("../assets/svg/bg.svg");
     object-fit: cover;
   }
 
-  .card-wrapper {
-    @media screen and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 3rem;
-      column-gap: 2rem;
-      grid-template-areas:
-        "header header"
-        "col1 col2"
-        "col3 col4 "
-        "col5 col6";
-
-      .col1 {
-        grid-area: col1;
-      }
-      .col2 {
-        grid-area: col2;
-      }
-      .header {
-        grid-area: header;
-      }
-      .col3 {
-        grid-area: col3;
-      }
-      .col4 {
-        grid-area: col4;
-      }
-      .col5 {
-        transform: translateY(0rem);
-        grid-area: col5;
-      }
-      .col6 {
-        transform: translateY(-rem);
-        grid-area: col6;
-      }
-    }
-    @media screen and (min-width: 1026px) {
-      padding-top: 8rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      row-gap: 3rem;
-      column-gap: 2rem;
-      grid-template-areas:
-        "col1 col2 header header"
-        "col3 col4 col5 col6";
-
-      .col1 {
-        grid-area: col1;
-      }
-      .col2 {
-        grid-area: col2;
-      }
-      .header {
-        grid-area: header;
-      }
-      .col3 {
-        grid-area: col3;
-      }
-      .col4 {
-        grid-area: col4;
-      }
-      .col5 {
-        transform: translateY(-5rem);
-        grid-area: col5;
-      }
-      .col6 {
-        transform: translateY(-7rem);
-        grid-area: col6;
-      }
-    }
-  }
   //.hero {
   //  @media screen and (width: 375px) {
   //    margin-top: -11.5rem;
