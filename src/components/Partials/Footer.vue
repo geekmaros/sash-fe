@@ -120,7 +120,7 @@
           >hello@sash.com</a
         >
         <div class="social-media flex items-center mt-sash13">
-          <a href="#" class="mr-sash-15">
+          <a href="#" class="">
             <FooterSocialMediaIcons>
               <svg
                 width="24"
@@ -136,7 +136,7 @@
               </svg>
             </FooterSocialMediaIcons>
           </a>
-          <a href="#" class="mr-sash-15">
+          <a href="#" class="">
             <FooterSocialMediaIcons>
               <svg
                 width="24"
@@ -152,7 +152,7 @@
               </svg>
             </FooterSocialMediaIcons>
           </a>
-          <a href="#" class="mr-sash-15">
+          <a href="#" class="">
             <FooterSocialMediaIcons>
               <svg
                 width="24"
@@ -172,7 +172,7 @@
               </svg>
             </FooterSocialMediaIcons>
           </a>
-          <a href="#" class="mr-sash-15">
+          <a href="#" class="">
             <FooterSocialMediaIcons>
               <svg
                 width="24"

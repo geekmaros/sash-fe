@@ -42,6 +42,7 @@ module.exports = {
         sashlightblue: "#F5F8FC",
         sashgray200: "#425466",
         sashgray300: "#737B7D",
+        sashgray400: "#F2F2F2",
         footersm: "#444441"
       },
       letterSpacing: {
