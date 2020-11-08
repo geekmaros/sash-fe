@@ -129,7 +129,7 @@ module.exports = {
         sash104: "104.6px",
         sash160: "160px",
         sash165: "165px",
-
+        lgherotop: "7rem",
         7: "7rem",
         13: "13rem",
         15: "15rem",

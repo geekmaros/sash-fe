@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-full w-full pt-27 pb-48">
+  <section class="relative h-full w-full pt-27 pb-48 -mt-7">
     <div class="top">
       <div class="stroke w-full flex justify-center items-center">
         <svg
