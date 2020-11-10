@@ -2,7 +2,9 @@
   <div
     class="home  overflow-y-hiddens bg-white font-serif pt-12s pb md:pt-sash23 overflow-x-hidden"
   >
-    <div class="header-image absolute right-0 top-0 mt-lgherotop z-50 md:mr-7">
+    <div
+      class="header-image absolute right-0 top-0 mt-lgherotop hidden z-50 md:mr-7"
+    >
       <img
         src="../assets/images/Header-image.png"
         alt="Header Image"

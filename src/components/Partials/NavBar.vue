@@ -1,12 +1,57 @@
 <template>
-  <nav class="flex justify-between items-center ">
-    <div class="">
-      <img src="../../assets/Logo.png" alt="Sash Logo" />
-      <!--      <MobileLogo class="block md:hidden" />-->
-      <!--      <LargerScreenLogo class="hidden md:block" />-->
+  <nav class="md:flex justify-between items-center  pt-5 md:pt-0 bg">
+    <div
+      class="flex w-full items-center justify-between pb-3 md:pb-0 border-b md:border-b-0 px-sash22"
+    >
+      <div class="logo">
+        <img
+          src="../../assets/svg/mobilelogo.svg"
+          alt=""
+          class="block md:hidden"
+        />
+        <img
+          src="../../assets/svg/mediumlogo.svg"
+          alt=""
+          class="hidden md:block"
+        />
+      </div>
+      <div
+        class="nav-toggler bg-sashgray400 md:hidden rounded-full p-3"
+        @click="isNavOpen = !isNavOpen"
+      >
+        <svg
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          v-if="!isNavOpen"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.83337 4.25H14.1667V5.66667H2.83337V4.25ZM2.83337 7.79167H14.1667V9.20833H2.83337V7.79167ZM2.83337 11.3333H14.1667V12.75H2.83337V11.3333Z"
+            fill="#231F20"
+          />
+        </svg>
+        <svg
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          v-if="isNavOpen"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.2618 4.95825L8.25633 7.963L5.25158 4.95825L4.25 5.95984L7.25475 8.96459L4.25 11.9693L5.25158 12.9709L8.25633 9.96617L11.2618 12.9709L12.2634 11.9693L9.25863 8.96459L12.2634 5.95984L11.2618 4.95825Z"
+            fill="#231F20"
+          />
+        </svg>
+      </div>
     </div>
-    <div class="left-nav flex items-center">
-      <a href="#" class=" ">
+    <div
+      v-if="isNavOpen"
+      class="left-nav flex flex-col md:flex-row md:justify-end items-center md:w-full pt-sash388 md:pt-0  h-full md:h-auto h-screen md:h-auto"
+    >
+      <a href="#" class="mb-sash22 md:mb-0 ">
         <NavSocialMediaIcon
           ><svg
             width="24"
@@ -22,7 +67,11 @@
           </svg>
         </NavSocialMediaIcon>
       </a>
-      <a href="https://twitter.com/getsash" target="_blank" class="">
+      <a
+        href="https://twitter.com/getsash"
+        target="_blank"
+        class="mb-sash22 md:mb-0"
+      >
         <NavSocialMediaIcon>
           <svg
             width="24"
@@ -38,7 +87,7 @@
           </svg>
         </NavSocialMediaIcon>
       </a>
-      <a href="#" class=" ">
+      <a href="#" class=" mb-sash22 md:mb-0">
         <NavSocialMediaIcon>
           <svg
             width="24"
@@ -58,7 +107,7 @@
           </svg>
         </NavSocialMediaIcon>
       </a>
-      <a href="#" class=" ">
+      <a href="#" class="mb-sash22 md:mb-0 ">
         <NavSocialMediaIcon>
           <svg
             width="24"
@@ -81,6 +130,15 @@
           Get Sash
         </button>
       </a>
+      <p
+        class="block absolute bottom-0 pb-sash32 md:hidden text-xs md:text-base lg:text-sm text-thingray font-medium pt-2 pb-10s"
+      >
+        &copy; 2010 — 2020
+        <span class="ml-1">
+          <a href="#" class="text-sashgreen">Privacy</a> —
+          <a href="#" class="text-sashgreen">Terms</a>
+        </span>
+      </p>
     </div>
   </nav>
 </template>
@@ -89,6 +147,11 @@
 import NavSocialMediaIcon from "../UIElements/NavSocialMediaIcon";
 export default {
   name: "NavBar",
+  data() {
+    return {
+      isNavOpen: false
+    };
+  },
   components: { NavSocialMediaIcon }
 };
 </script>

@@ -1,20 +1,20 @@
 <template>
-  <header class="h-screen md:pl-sash165 pr-10 md:pr-sash165">
+  <header class="h-screen md:pl-sash165  md:px-0 md:pr-10 md:pr-sash165">
     <NavBar class=""> </NavBar>
     <section
-      class=" relative   font-serif fle grid md:grid-cols-12  items-center"
+      class=" relative   font-serif grid md:grid-cols-12  md:items-center px-5 md:px-0"
     >
       <div
-        class="heading lg:col-span-8 lg:text-justify text-center md:col-span-12 lg:mt-12s pt-20 "
+        class="heading md:col-span-8 md:text-justify text-center md:col-span-12 md:mt-12s md:pt-20 pt-sash29 "
       >
         <div
-          class="main-text text-sashblack text-mobiletext md:text-35 lg:text-48px lg:leading-112  ip:text-6xls font-black leading-tight"
+          class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
         >
           <h1>A modern social</h1>
           <h2><span>commerce</span> app.</h2>
         </div>
         <div
-          class="sub-text lg:max-w-2xl  text-15 md:leading-30  text-sashgray md:text-summobile lg:text-summobile mt-3 lg:mt-sash12 md:mt-sash133"
+          class="sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
         >
           <p>
             Sash is a new way for customers to direct message,
@@ -23,7 +23,9 @@
           <p>fast and seamless way.</p>
         </div>
 
-        <div class="download-options flex items-center md:mt-8">
+        <div
+          class="download-options flex items-center justify-center md:justify-start mt-3 md:mt-8"
+        >
           <a
             href="#"
             class="transform hover:scale-125 transition-all duration-100"
@@ -85,6 +87,7 @@ section {
       width: 9rem;
       margin: -2px auto;
       height: 7px;
+      display: none;
     }
 
     @media screen and (min-width: 768px) {
