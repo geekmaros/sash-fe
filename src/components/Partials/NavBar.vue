@@ -1,5 +1,5 @@
 <template>
-  <nav class="md:flex justify-between items-center  pt-5 md:pt-0 bg">
+  <nav class="md:flex justify-between items-center  pt-5 md:pt-0 ">
     <div
       class="flex w-full items-center justify-between pb-3 md:pb-0 border-b md:border-b-0 px-sash22"
     >
@@ -149,7 +149,7 @@ export default {
   name: "NavBar",
   data() {
     return {
-      isNavOpen: false
+      isNavOpen: true
     };
   },
   components: { NavSocialMediaIcon }

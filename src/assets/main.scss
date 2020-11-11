@@ -1,27 +1,9 @@
-//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
-//@font-face {
-//  font-family: "Circular Std Black";
-//  src: url("/fonts/circular/CircularStd-Black.otf") format("opentype");
-//  font-style: normal;
-//  font-weight: 900;
-//}
-//@font-face {
-//  font-family: "Circular Std Bold";
-//  src: url("/fonts/circular/CircularStd-Bold.otf") format("opentype");
-//  font-weight: 800;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: "Circular Std";
-//  src: url("/fonts/circular/CircularStd-Book.otf") format("opentype");
-//  font-weight: 400;
-//  font-style: normal;
-//
-//
-//
-//}
 
+
+body{
+  overflow-x: hidden !important;
+
+}
 
   *,
   *:before,
@@ -53,14 +35,4 @@
   }
 
 
-
-.hero-main {
-
-  font-weight: 900;
-}
-
-.herosvg{
-  display: block;
-  z-index: 50 !important;
-}
 

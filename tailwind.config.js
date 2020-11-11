@@ -14,6 +14,7 @@ module.exports = {
       fontSize: {
         8: "0.5rem",
         9: "0.5625rem",
+        10: "10px",
         12: "0.75rem",
         15: "0.9375rem",
         17: "1.0625rem",
@@ -56,6 +57,7 @@ module.exports = {
         10: "10px",
         18: "18px",
         19: "19px",
+        20: "20px",
         23: "23px",
         24: "24px",
         25: "25px",
@@ -73,6 +75,7 @@ module.exports = {
         112: "112.1%"
       },
       spacing: {
+        "90vh": "90vh",
         sash10: "10px",
         sash11: "11px",
         sash12: "12px",

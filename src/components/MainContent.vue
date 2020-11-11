@@ -259,18 +259,25 @@ section {
   position: relative;
 
   @media screen and (max-width: 767px) {
-    //background: url("../assets/svg/bendmobile.svg");
+    background-size: cover;
+    height: 100%;
+    object-fit: cover;
+    background: url("../assets/svg/bg.svg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
   }
   //mobile hero
   @media screen and (min-width: 768px) {
     background-size: cover;
     height: 100%;
     object-fit: cover;
-    //background: url("../assets/svg/bendmd.svg") no-repeat center center;
+    background: url("../assets/svg/bg.svg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
   }
   @media screen and (min-width: 1025px) {
     background: url("../assets/svg/bg.svg");

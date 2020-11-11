@@ -1,8 +1,10 @@
 <template>
-  <header class="h-screen md:pl-sash165  md:px-0 md:pr-10 md:pr-sash165">
+  <header
+    class="h-auto md:h-screen md:pl-sash165  md:px-0 md:pr-10 md:pr-sash165 overflow-x-hidden"
+  >
     <NavBar class=""> </NavBar>
     <section
-      class=" relative   font-serif grid md:grid-cols-12  md:items-center px-5 md:px-0"
+      class=" relative bg-red-600 h-auto md:h-90vh  font-serif grid md:grid-cols-12  md:items-center px-5 md:px-0 overflow-x-hidden"
     >
       <div
         class="heading md:col-span-8 md:text-justify text-center md:col-span-12 md:mt-12s md:pt-20 pt-sash29 "
@@ -41,6 +43,7 @@
         </div>
       </div>
     </section>
+    <div class="mobile-svg "></div>
   </header>
 </template>
 
@@ -57,7 +60,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  height: 90vh;
+  //height: 90vh;
   span {
     cursor: pointer;
     position: relative;
