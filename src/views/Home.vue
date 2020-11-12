@@ -72,7 +72,7 @@
       <div class="mobile-svg "></div>
     </header>
     <section
-      class="main-content relative h-full w-full pt-27 pb-48 -mt-56 md:-mt-48"
+      class="main-content relative h-full w-full pt-27 pb-10 md:pb-48 -mt-56 md:-mt-48"
     >
       <div class="top">
         <div class="stroke w-full flex justify-center items-center">
@@ -115,10 +115,10 @@
       </div>
       <main class="mt-69">
         <div
-          class="tile-1 w-full flex flex-col  justify-center items-center md:grid grid-cols-12"
+          class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
         >
           <div
-            class="image-wrapper col-span-6 justify-self-end order-2 md:order-1 md:mr-7"
+            class="image-wrapper col-span-6 md:justify-self-end order-2 md:order-1 md:mr-7"
           >
             <img
               class="hidden md:block"
@@ -140,7 +140,7 @@
               class="mx-auto md:mx-0"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <circle cx="26.6923" cy="11.923" r="11.6923" fill="#00BEFF" />
+              >
               <path
                 d="M24.6154 8.69226H4.92308C3.56554 8.69226 2.46154 9.79626 2.46154 11.1538V25.923C2.46154 27.2806 3.56554 28.3846 4.92308 28.3846H8.61538V33.0209L16.3409 28.3846H24.6154C25.9729 28.3846 27.0769 27.2806 27.0769 25.923V11.1538C27.0769 9.79626 25.9729 8.69226 24.6154 8.69226ZM24.6154 25.923H15.6591L11.0769 28.6713V25.923H4.92308V11.1538H24.6154V25.923Z"
                 fill="black"
@@ -156,7 +156,7 @@
               DO MORE WITH DIRECT MESSAGING
             </p>
             <h1
-              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black mt-sash10 px-16 md:px-0 md:max-w-xs"
+              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black  md:mt-sash10 px-16 md:px-0 md:max-w-xs"
             >
               Conversational Commerce
             </h1>
@@ -169,7 +169,7 @@
           </div>
         </div>
         <div
-          class="tile-2 mt-8s w-full flexs justify-center items-center md:grid grid-cols-12"
+          class="tile-2 mt-8s w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
         >
           <div
             class="tile-text text-right  justify-self-end col-span-6 md:mr-8"
@@ -208,7 +208,7 @@
               GROW ORGANICALLY
             </p>
             <h1
-              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-right font-black mt-sash10 px-32 md:px-0 md:max-w-xs"
+              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-right font-black md:mt-sash10 px-32 md:px-0 md:max-w-xs"
             >
               Social Discovery
             </h1>
@@ -219,22 +219,43 @@
               promote your business & products.
             </p>
           </div>
-          <div class="image-wrapper col-span-6 justify-self-start ml-10">
-            <img class="" src="../assets/images/tile2.png" alt="" />
+          <div class="image-wrapper col-span-6 md:justify-self-start md:ml-10">
+            <img
+              class="hidden md:block"
+              src="../assets/images/tile2.png"
+              alt=""
+            />
+            <img
+              class="block md:hidden"
+              src="../assets/images/tile2mobile.png"
+              alt=""
+            />
           </div>
         </div>
         <div
-          class="tile-3 w-full flexs justify-center items-center grid grid-cols-12"
+          class="tile-3 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
         >
-          <div class="image-wrapper col-span-6 justify-self-end mr-7">
-            <img class="" src="../assets/images/tile3.png" alt="" />
+          <div
+            class="image-wrapper col-span-6 justify-self-end order-2 md:order-1 md:mr-7"
+          >
+            <img
+              class="hidden md:block"
+              src="../assets/images/tile3.png"
+              alt=""
+            />
+            <img
+              class="block md:hidden"
+              src="../assets/images/tile3mobile.png"
+              alt=""
+            />
           </div>
-          <div class="tile-text text-left col-span-6">
+          <div class="tile-text text-left col-span-6 order-1 md:order-2">
             <svg
               width="39"
               height="36"
               viewBox="0 0 39 36"
               fill="none"
+              class="mx-auto md:mx-0"
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="26.6923" cy="11.9231" r="11.6923" fill="#00BEFF" />
@@ -245,17 +266,17 @@
             </svg>
 
             <p
-              class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+              class="tag-line uppercase text-center md:text-left text-sashgray text-10 md:text-lg leading-25 mt-sash12"
             >
               SHOWCASE YOUR HUSTLE
             </p>
             <h1
-              class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs"
             >
               Product Catalogue
             </h1>
             <p
-              class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+              class="summary text-sashgray200 text-sm md:text-lg text-center md:text-left leading-20 md:leading-25 mt-sash10 mx-auto md:mx-0 max-w-xs"
             >
               Empower prospecting customers to browse through your product range
               and shop digitally.
@@ -263,15 +284,18 @@
           </div>
         </div>
         <div
-          class="tile-4 w-full flexs justify-center items-center grid grid-cols-12"
+          class="tile-4 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
         >
-          <div class="tile-text text-right  justify-self-end col-span-6 mr-8">
+          <div
+            class="tile-text text-right  justify-self-end col-span-6 md:mr-8"
+          >
             <div class="icon flex justify-end">
               <svg
                 width="39"
                 height="37"
                 viewBox="0 0 39 37"
                 fill="none"
+                class="mx-auto md:mx-0"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="27.3077" cy="12.4231" r="11.6923" fill="#00BEFF" />
@@ -286,37 +310,58 @@
               </svg>
             </div>
             <p
-              class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+              class="tag-line uppercase text-center md:text-right text-sashgray text-10 md:text-lg leading-25 mt-sash12"
             >
               THE POWER OF “TO GO”
             </p>
             <h1
-              class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-right font-black md:mt-sash10 px-32 md:px-0 md:max-w-xs"
             >
               Fulfilment
             </h1>
             <p
-              class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+              class="summary text-sashgray200 text-sm md:text-lg text-center md:text-right leading-20 md:leading-25 mt-sash10 mx-auto px-paddingx md:mx-0 max-w-xs"
             >
-              Fulfilment
+              Fulfil orders as they coming in while on the move
             </p>
           </div>
-          <div class="image-wrapper col-span-6 justify-self-start ml-10">
-            <img class="" src="../assets/images/tile4.png" alt="" />
+          <div class="image-wrapper col-span-6 justify-self-start md:ml-10">
+            <img
+              class="hidden md:block"
+              src="../assets/images/tile4.png"
+              alt=""
+            />
+            <img
+              class="block md:hidden"
+              src="../assets/images/tile4mobile.png"
+              alt=""
+            />
           </div>
         </div>
         <div
-          class="tile-3 w-full flexs justify-center items-center grid grid-cols-12"
+          class="tile-5 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
         >
-          <div class="image-wrapper col-span-6 justify-self-end mr-7">
-            <img class="" src="../assets/images/tile5.png" alt="" />
+          <div
+            class="image-wrapper col-span-6 justify-self-end  order-2 md:order-1 md:mr-7"
+          >
+            <img
+              class="hidden md:block"
+              src="../assets/images/tile5.png"
+              alt=""
+            />
+            <img
+              class="block md:hidden"
+              src="../assets/images/tile5mobile.png"
+              alt=""
+            />
           </div>
-          <div class="tile-text text-left col-span-6">
+          <div class="tile-text text-left col-span-6 order-1 md:order-2">
             <svg
               width="39"
               height="37"
               viewBox="0 0 39 37"
               fill="none"
+              class="mx-auto md:mx-0"
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="26.6923" cy="12.423" r="11.6923" fill="#00BEFF" />
@@ -327,17 +372,17 @@
             </svg>
 
             <p
-              class="tag-line uppercase text-sashgray text-lg leading-25 mt-sash12"
+              class="tag-line uppercase text-center md:text-left text-sashgray text-10 md:text-lg leading-25 mt-sash12"
             >
               YOUR DIGITAL BUSINESS ASSOCIATE
             </p>
             <h1
-              class="title text-sashblack text-30px font-black leading-36 mt-sash10 max-w-xs"
+              class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs"
             >
               Report & Analytics
             </h1>
             <p
-              class="summary text-sashgray200 text-lg leading-25 mt-sash10 max-w-xs"
+              class="summary text-sashgray200 text-sm md:text-lg text-center md:text-left leading-20 md:leading-25 mt-sash10 mx-auto md:mx-0 max-w-xs"
             >
               Stay on top of your business numbers at a glance.
             </p>

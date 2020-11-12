@@ -28,6 +28,7 @@ module.exports = {
         51: "3.20571875rem",
         35: "3.2rem",
         "30px": "30px",
+        "28px": "28px",
         "48px": "48px",
         "40px": "40px",
         iphero: "3.7rem",
@@ -137,6 +138,7 @@ module.exports = {
         sash160: "160px",
         sash165: "165px",
         lgherotop: "7rem",
+        paddingx: "3rem",
         7: "7rem",
         13: "13rem",
         15: "15rem",
@@ -156,6 +158,7 @@ module.exports = {
         54: "54px",
         65: "64px",
         69: "69px",
+        91: "91px",
         120: "120px",
         121: "100px",
         card: "470px"

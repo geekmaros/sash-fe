@@ -1,18 +1,22 @@
 <template>
-  <footer class="bg-footer pt-7 h-auto ">
-    <div class="top  pb-32 border-b border-gray-800 ">
+  <footer class="bg-footer pt-12 md:pt-7 h-auto ">
+    <div class="top  md:pb-32 md:border-b border-gray-800 ">
       <div
-        class="sub-text text-white max-w-6xl mx-auto font-bold leading-40 text-center text-sm md:text-base md:pb-10  md:text-xl lg:text-40px"
+        class="sub-text text-white text-28px leading-36 px-5 md:px-0 md:max-w-6xl mx-auto font-bold md:leading-40 text-center text-sm md:text-base md:pb-10  md:text-xl lg:text-40px"
       >
         <P
           >Grow and scale your hustle faster with us. Getting started in 5
           minutes.
         </P>
       </div>
-      <p class="text-lg text-center leading-20 text-sashgray300 pt-3">
+      <p
+        class="text-sm md:text-lg text-center leading-20 text-sashgray300 pt-3"
+      >
         Made with love and passion in Lagos.
       </p>
-      <div class="download-options flex justify-center items-center md:mt-8">
+      <div
+        class="download-options flex justify-center items-center mt-4 md:mt-8"
+      >
         <a
           href="#"
           class="transform hover:scale-125 transition-all duration-100"
@@ -27,15 +31,17 @@
         /></a>
       </div>
     </div>
-    <div class="bottom md:pl-7 pr-10 md:pr-sash165 mt-32 grid grid-cols-12">
-      <div class="left col-span-6">
+    <div
+      class="bottom md:pl-7 md:pr-10 flex flex-col md:pr-sash165 mt-16 md:mt-32 md:grid grid-cols-12"
+    >
+      <div class="left col-span-6 order-2 md:order-1 pt-10 md:pt-0">
         <div class="">
-          <!--        <img src="../../assets/Logo.png" alt="Sash Logo" />-->
           <svg
             width="75"
             height="28"
             viewBox="0 0 75 28"
             fill="none"
+            class="mx-auto md:mx-0"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g clip-path="url(#clip0)">
@@ -97,14 +103,16 @@
             </defs>
           </svg>
         </div>
-        <p class="text-sm leading-20 text-sashgray300 pt-23 max-w-lg">
+        <p
+          class="text-sm leading-20 text-sashgray300 pt-23 max-w-lg text-center md:text-left px-8 md:px-0"
+        >
           Sash is a modern digital commerce tool for African merchants. It is
           the best place to do everyday digital trade in a seamless, fast and
           productive way. Payment & Wallet rails are provided by Paystack &
           Rubies MFB.
         </p>
         <p
-          class=" text-sm md:text-base lg:text-sm text-white font-medium pt-2 pb-10"
+          class="text-center md:text-left text-sm md:text-base lg:text-sm text-white font-medium pt-6 md:pt-2 pb-16 md:pb-10"
         >
           &copy; 2010 — 2020
           <span class="ml-1">
@@ -112,14 +120,20 @@
           </span>
         </p>
       </div>
-      <div class="right col-span-6 justify-self-center">
-        <p class="text-lg leading-25 text-white pb-1">Contact Us</p>
+      <div
+        class="right col-span-6 justify-self-center text-center md:text-left order-1 md:order-2 "
+      >
+        <p class="text-lg leading-25  text-white pb-1">
+          Contact Us
+        </p>
         <a
           class="text-lg leading-25 text-sashgreen pb-1"
           href="mailto:hello@sash.com"
           >hello@sash.com</a
         >
-        <div class="social-media flex items-center mt-sash13">
+        <div
+          class="social-media flex justify-center md:justify-start items-center  mt-sash13 border-b md:border-b-0 border-gray-800 pb-8 md:pb-0 mx-6"
+        >
           <a href="#" class="">
             <FooterSocialMediaIcons>
               <svg
