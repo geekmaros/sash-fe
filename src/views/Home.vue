@@ -60,12 +60,12 @@
           </div>
         </div>
         <div
-          class="herosection w-full flex -ml-3 block md:hidden  mt-sash635 bg-white"
+          class="herosection image-wrapper w-full flex -ml-3 block md:hidden  mt-sash635 bg-white"
         >
           <img
             src="../assets/images/Header-image.png"
             alt="Header Image"
-            class="z-50 "
+            class="mobile-hero z-50 h-auto object-cover object-top  "
           />
         </div>
       </main>
@@ -467,25 +467,13 @@ section {
       }
     }
 
-    //span:hover {
-    //  background-position: 0 11px;
-    //}
+    //.image-wrapper {
+    //  width: 60%;
     //
-    //h2:hover:before {
-    //  transform: translateY(10px);
-    //}
-    //@media screen and (max-width: 1024px) {
-    //  .form-group {
-    //    padding-left: 17rem !important;
-    //    padding-right: 17rem !important;
+    //  .mobile-hero {
+    //    width: 100%;
     //  }
     //}
-    @media screen and (width: 1024px) {
-      .form-group {
-        padding-left: 17rem !important;
-        padding-right: 17rem !important;
-      }
-    }
   }
   .main-content {
     position: relative;

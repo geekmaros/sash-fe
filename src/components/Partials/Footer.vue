@@ -132,7 +132,7 @@
           >hello@sash.com</a
         >
         <div
-          class="social-media flex justify-center md:justify-start items-center  mt-sash13 border-b md:border-b-0 border-gray-800 pb-8 md:pb-0 mx-6"
+          class="social-media flex justify-center md:justify-start items-center  mt-sash13 border-b md:border-b-0 border-gray-800 pb-8 md:pb-0 mx-6 md:mx-0"
         >
           <a href="#" class="">
             <FooterSocialMediaIcons>
