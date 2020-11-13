@@ -24,7 +24,7 @@
         class="hero-text-section relative  h-auto md:h-90vh  font-serif md:grid md:grid-cols-12  md:items-center px-5 md:px-0"
       >
         <div
-          class="heading md:col-span-8 md:text-justify text-center  md:pt-20 pt-sash29 "
+          class="heading md:col-span-8 md:text-justify text-center  md:pt-20 pt-sash29 mb-10 md:mb-0 "
         >
           <div
             class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
@@ -72,7 +72,7 @@
       <div class="mobile-svg "></div>
     </header>
     <section
-      class="main-content relative h-full w-full pt-27 pb-10 md:pb-48 -mt-56 md:-mt-48"
+      class="main-content relative h-full w-full pt-27 pb-10 md:pb-48 -mt-56s -mt-bgtop md:-mt-48"
     >
       <div class="top">
         <div class="stroke w-full flex justify-center items-center">
@@ -467,13 +467,15 @@ section {
       }
     }
 
-    //.image-wrapper {
-    //  width: 60%;
-    //
-    //  .mobile-hero {
-    //    width: 100%;
-    //  }
-    //}
+    .image-wrapper {
+      width: 100%;
+      margin: 0 auto;
+
+      .mobile-hero {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
   .main-content {
     position: relative;
@@ -482,7 +484,7 @@ section {
       background-size: cover;
       height: 100%;
       object-fit: cover;
-      background: url("../assets/svg/bg.svg");
+      background: url("../assets/svg/mobilebg.svg");
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
