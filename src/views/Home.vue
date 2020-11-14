@@ -3,7 +3,7 @@
     class="home  overflow-y-hidden  bg-white font-serif pt-12s pb md:pt-sash23 overflow-x-hidden"
   >
     <div
-      class="header-image absolute right-0 top-0 mt-16 hidden md:block z-50 md:mr-7"
+      class="header-image absolute right-0 lg:top-0 lg:mt-16 hidden md:block z-50 lg:mr-7"
     >
       <img
         src="../assets/images/Header-image.png"
@@ -17,7 +17,7 @@
       />
     </div>
     <header
-      class="h-auto md:h-screen md:pl-sash165  md:px-0 md:pr-10 md:pr-sash165 "
+      class="h-auto md:h-screen lg:pl-sash165 md:pl-10  md:px-0 md:pr-10 lg:pr-sash165 "
     >
       <NavBar class=""> </NavBar>
       <main
@@ -62,6 +62,11 @@
         <div
           class="herosection image-wrapper w-full flex -ml-3 block md:hidden  mt-sash635 bg-white"
         >
+          <img
+            src="../assets/images/Header-image.png"
+            alt="Header Image"
+            class="mobile-hero z-50 h-auto object-cover object-top  "
+          />
           <img
             src="../assets/images/Header-image.png"
             alt="Header Image"
@@ -118,15 +123,15 @@
           class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
         >
           <div
-            class="image-wrapper col-span-6 md:justify-self-end order-2 md:order-1 md:mr-7"
+            class="image-wrapper col-span-6  md:items-center order-2 md:order-1 md:mr-7"
           >
             <img
-              class="hidden md:block"
+              class="hidden md:block ml-auto  md:mr-16"
               src="../assets/images/tile1.png"
               alt=""
             />
             <img
-              class="block md:hidden"
+              class="block md:hidden mx-auto"
               src="../assets/images/tile1mobile.png"
               alt=""
             />
@@ -226,7 +231,7 @@
               alt=""
             />
             <img
-              class="block md:hidden"
+              class="block md:hidden mx-auto"
               src="../assets/images/tile2mobile.png"
               alt=""
             />
@@ -239,12 +244,12 @@
             class="image-wrapper col-span-6 justify-self-end order-2 md:order-1 md:mr-7"
           >
             <img
-              class="hidden md:block"
+              class="hidden md:block ml-auto  md:mr-16"
               src="../assets/images/tile3.png"
               alt=""
             />
             <img
-              class="block md:hidden"
+              class="block md:hidden mx-auto"
               src="../assets/images/tile3mobile.png"
               alt=""
             />
@@ -320,7 +325,7 @@
               Fulfilment
             </h1>
             <p
-              class="summary text-sashgray200 text-sm md:text-lg text-center md:text-right leading-20 md:leading-25 mt-sash10 mx-auto px-paddingx md:mx-0 max-w-xs"
+              class="summary text-sashgray200 text-sm md:text-lg text-center md:text-right leading-20 md:leading-25 mt-sash10 mx-auto  md:mx-0 md:max-w-xs"
             >
               Fulfil orders as they coming in while on the move
             </p>
@@ -332,7 +337,7 @@
               alt=""
             />
             <img
-              class="block md:hidden"
+              class="block md:hidden mx-auto"
               src="../assets/images/tile4mobile.png"
               alt=""
             />
@@ -345,12 +350,12 @@
             class="image-wrapper col-span-6 justify-self-end  order-2 md:order-1 md:mr-7"
           >
             <img
-              class="hidden md:block"
+              class="hidden md:block ml-auto  md:mr-16"
               src="../assets/images/tile5.png"
               alt=""
             />
             <img
-              class="block md:hidden"
+              class="block md:hidden mx-auto"
               src="../assets/images/tile5mobile.png"
               alt=""
             />

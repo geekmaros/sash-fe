@@ -161,7 +161,9 @@ module.exports = {
         91: "91px",
         120: "120px",
         121: "100px",
-        bgtop: "16rem",
+        bgtopmobile: "10rem",
+        bgtop: "13rem",
+        bgtopmd: "25rem",
         card: "470px"
       }
     }

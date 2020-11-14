@@ -1,7 +1,9 @@
 <template>
-  <nav class="md:flex justify-between items-center  pt-5 md:pt-0 ">
+  <nav
+    class="lg:flex justify-between items-center  pt-5 md:pt-23 md:pb-23 lg:pl-sash165   md:px-20 md:pr-10s lg:pr-sash165 "
+  >
     <div
-      class="flex w-full items-center justify-between pb-3 md:pb-0 border-b md:border-b-0 px-sash22"
+      class="flex w-full items-center justify-between pb-3 md:pb-0 border-b md:border-b-0 px-sash22 md:px-0"
     >
       <div class="logo">
         <img
@@ -16,7 +18,7 @@
         />
       </div>
       <div
-        class="nav-toggler bg-sashgray400 md:hidden rounded-full p-3"
+        class="nav-toggler bg-sashgray400 lg:hidden rounded-full p-3"
         @click="isNavOpen = !isNavOpen"
       >
         <svg
@@ -48,7 +50,7 @@
       </div>
     </div>
     <div
-      class="left-nav hidden md:flex flex-col md:flex-row md:justify-end items-center md:w-full pt-sash388 md:pt-0  h-full md:h-auto h-screen md:h-auto"
+      class="left-nav hidden lg:flex flex-col lg:flex-row lg:justify-end items-center lg:w-full pt-sash388 lg:pt-0  h-full lg:h-auto h-screen lg:h-auto"
     >
       <a href="#" class="mb-sash22 md:mb-0 ">
         <NavSocialMediaIcon
@@ -141,9 +143,9 @@
     </div>
     <div
       v-if="isNavOpen === true"
-      class="left-nav  md:hidden flex flex-col md:flex-row md:justify-end items-center md:w-full pt-sash388 md:pt-0  h-full md:h-auto h-screen md:h-auto"
+      class="left-nav  lg:hidden flex flex-col lg:flex-row lg:justify-end items-center w-full pt-sash388 md:pt-10 h-screen"
     >
-      <a href="#" class="mb-sash22 md:mb-0 ">
+      <a href="#" class="mb-sash22 md:mb-5 ">
         <NavSocialMediaIcon
           ><svg
             width="24"
@@ -162,7 +164,7 @@
       <a
         href="https://twitter.com/getsash"
         target="_blank"
-        class="mb-sash22 md:mb-0"
+        class="mb-sash22 md:mb-5"
       >
         <NavSocialMediaIcon>
           <svg
@@ -179,7 +181,7 @@
           </svg>
         </NavSocialMediaIcon>
       </a>
-      <a href="#" class=" mb-sash22 md:mb-0">
+      <a href="#" class=" mb-sash22 md:mb-5">
         <NavSocialMediaIcon>
           <svg
             width="24"
@@ -199,7 +201,7 @@
           </svg>
         </NavSocialMediaIcon>
       </a>
-      <a href="#" class="mb-sash22 md:mb-0 ">
+      <a href="#" class="mb-sash22 md:mb-5 ">
         <NavSocialMediaIcon>
           <svg
             width="24"

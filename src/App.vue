@@ -1,5 +1,7 @@
 <template>
   <div id="app" class="">
+    <NavBar class="sticky top-0 bg-white z-50"></NavBar>
+
     <router-view />
     <Footer />
   </div>
@@ -7,8 +9,9 @@
 
 <script>
 import Footer from "./components/Partials/Footer";
+import NavBar from "./components/Partials/NavBar";
 export default {
-  components: { Footer }
+  components: { NavBar, Footer }
 };
 </script>
 
