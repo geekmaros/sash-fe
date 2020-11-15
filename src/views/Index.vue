@@ -6,12 +6,12 @@
         class="h-auto md:h-screen lg:pl-sash165 md:pl-10  md:px-0 md:pr-10 lg:pr-sash165 "
       >
         <div
-          class="header-image absolute right-0 lg:top-0 lg:mt-24 hidden lg:block z-10 lg:mr-7"
+          class="header-image absolute  right-0 lg:top-0 lg:mt-24 hidden lg:blocks lg:hidden z-10 lg:mr-7"
         >
           <img
             src="../assets/images/Header-image.png"
             alt="Header Image"
-            class="z-30 hidden md:block"
+            class="z-30 hidden lg:block"
           />
           <img
             src="../assets/images/Header-image.png"
@@ -20,10 +20,10 @@
           />
         </div>
         <main
-          class="hero-text-section relative   h-auto md:h-90vh font-serif lg:flex lg:justify-between flex-wrap md:grids md:grid-cols-12  md:items-centers px-5 md:px-0"
+          class="hero-text-section relative   h-auto md:h-90vh font-serif lg:flexs lg:justify-between flex-wraps lg:grid lg:grid-cols-12  lg:items-center px-5 md:px-0"
         >
           <div
-            class="heading z-10 md:col-span-7 lg:text-justify text-center  md:pt-20 pt-sash29 mb-10 md:mb-0 lg:self-center "
+            class="heading z-10 md:col-span-7 lg:text-justify text-center  md:pt-20 pt-sash29 lg:-mt-24  mb-10 md:mb-0 lg:self-centers "
           >
             <div
               class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
@@ -59,8 +59,14 @@
             </div>
           </div>
           <div
-            class="herosection col-span-6s image-wrapper   flex -ml-3 lg:absolute top-0 right-0 lg:-mr-16s md:mt-16  lg:mt-bgtop bg-white"
+            class="herosection col-span-5  image-wrapper flex lg:self-center -ml-3 lg:absolute pl-10 top-0s right-0 lg:-mr-12 md:mt-16 lg:mt-0 bg-white"
           >
+            <img
+              src="../assets/images/Header-image.png"
+              alt="Header Image"
+              class="z-30 hidden  lg:block h-auto"
+            />
+
             <img
               src="../assets/images/Header-image.png"
               alt="Header Image"
@@ -77,7 +83,7 @@
       </header>
       <!--    </div>-->
       <section
-        class="main-content relative h-full w-full pt-27 pb-10 md:pb-48 -mt-56s -mt-bgtop md:-mt-bgtopmd lg:-mt-48"
+        class="main-content relative h-full w-full pt-27 pb-10 md:pb-48 -mt-56s -mt-bgtop md:-mt-bgtopmd lg:-mt-bgtoplg"
       >
         <div class="top">
           <div class="stroke w-full flex justify-center items-center">
@@ -123,16 +129,16 @@
             class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper col-span-6  md:items-center order-2 md:order-1 md:mr-7s"
+              class="image-wrapper lg:flex justify-center items-center col-span-6  md:items-center order-2 md:order-1 md:mr-7s lg"
             >
               <img
-                class="hidden md:block ml-auto  md:mr-16"
-                src="../assets/images/tile1.png"
+                class="hidden gif-lg md:block ml-auto  md:mr-16"
+                src="../assets/images/giffile.gif"
                 alt=""
               />
               <img
-                class="block md:hidden mx-auto"
-                src="../assets/images/tile1mobile.png"
+                class="block gif-lg md:hidden mx-auto"
+                src="../assets/images/giffile.gif"
                 alt=""
               />
             </div>
@@ -233,7 +239,7 @@
               class="image-wrapper col-span-6 md:justify-self-start md:-ml-10 lg:ml-0"
             >
               <img
-                class="hidden md:block"
+                class="hidden md:block "
                 src="../assets/images/tile2.png"
                 alt=""
               />
@@ -422,6 +428,10 @@ export default {
 
 <style scoped lang="scss">
 section {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   main {
     //height: 90vh;
     span {
@@ -497,6 +507,11 @@ section {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-repeat: no-repeat;
+      .gif-lg {
+        margin-top: 20px;
+        width: 157px !important;
+        height: 285px !important;
+      }
     }
     //mobile hero
     @media screen and (min-width: 768px) {
@@ -507,11 +522,34 @@ section {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      .gif-lg {
+        width: 255px !important;
+        height: 502px !important;
+      }
       //background-repeat: no-repeat;
     }
     @media screen and (min-width: 1025px) {
+      background-size: cover;
+      background-repeat: no-repeat;
       background: url("../assets/svg/bg.svg");
       object-fit: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      .gif-lg {
+        width: 255px !important;
+        height: 502px !important;
+      }
+    }
+    @media screen and (min-width: 1367px) {
+      margin-top: -24rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background: url("../assets/svg/bg.svg");
+      object-fit: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     }
 
     //.hero {
