@@ -28,10 +28,11 @@
             <div
               class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
             >
-              <h1 class="text1">A modern social</h1>
-              <h2 class="text2"><span>commerce</span> app.</h2>
+              <h1 ref="text1" class="text1">A modern social</h1>
+              <h2 ref="text2" class="text2"><span>commerce</span> app.</h2>
             </div>
             <div
+              ref="text3"
               class=" text3 sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
             >
               <p>
@@ -42,6 +43,7 @@
             </div>
 
             <div
+              ref="item4"
               class="item4 download-options flex items-center justify-center lg:justify-start mt-3 md:mt-8"
             >
               <a
@@ -62,17 +64,20 @@
             class="herosection col-span-5  image-wrapper flex lg:self-center -ml-3 lg:absolute pl-10 top-0s right-0 lg:-mr-12 md:mt-16 lg:mt-0 bg-white"
           >
             <img
+              ref="heroImg1"
               src="../assets/images/Header-image.png"
               alt="Header Image"
               class="z-30 hero-img hidden  lg:block h-auto"
             />
 
             <img
+              ref="heroImg2"
               src="../assets/images/Header-image.png"
               alt="Header Image"
               class="mobile-hero hero-img  h-auto object-cover object-top hidden md:block lg:hidden md:w-card z-20 md:mx-auto "
             />
             <img
+              ref="heroImg3"
               src="../assets/images/mobilehero.png"
               alt="Header Image"
               class="mobile-hero hero-img h-auto object-cover object-top block md:hidden z-20 mx-auto  "
@@ -425,10 +430,19 @@ export default {
   name: "Index",
   mounted() {
     const textTl = new TimelineLite();
+    const {
+      text1,
+      text2,
+      text3,
+      item4,
+      heroImg1,
+      heroImg2,
+      heroImg3
+    } = this.$refs;
 
     textTl
       .fromTo(
-        ".hero-img",
+        [heroImg1, heroImg2, heroImg3],
         1,
         {
           x: 400,
@@ -440,7 +454,7 @@ export default {
         }
       )
       .fromTo(
-        [".text1"],
+        text1,
         1,
         {
           y: 200,
@@ -456,7 +470,7 @@ export default {
         "Text-one"
       )
       .fromTo(
-        ".text2",
+        text2,
         1,
         {
           y: 200,
@@ -472,7 +486,7 @@ export default {
         "Text-one+=1"
       )
       .fromTo(
-        ".text3",
+        text3,
         1,
         {
           y: 200,
@@ -487,7 +501,7 @@ export default {
         "Text-two+=1"
       )
       .fromTo(
-        ".item4",
+        item4,
         1,
         {
           y: 200,
