@@ -28,11 +28,11 @@
             <div
               class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
             >
-              <h1>A modern social</h1>
-              <h2><span>commerce</span> app.</h2>
+              <h1 class="text1">A modern social</h1>
+              <h2 class="text2"><span>commerce</span> app.</h2>
             </div>
             <div
-              class="sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
+              class=" text3 sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
             >
               <p>
                 Sash is a new way for customers to direct message,
@@ -42,7 +42,7 @@
             </div>
 
             <div
-              class="download-options flex items-center justify-center lg:justify-start mt-3 md:mt-8"
+              class="item4 download-options flex items-center justify-center lg:justify-start mt-3 md:mt-8"
             >
               <a
                 href="#"
@@ -64,18 +64,18 @@
             <img
               src="../assets/images/Header-image.png"
               alt="Header Image"
-              class="z-30 hidden  lg:block h-auto"
+              class="z-30 hero-img hidden  lg:block h-auto"
             />
 
             <img
               src="../assets/images/Header-image.png"
               alt="Header Image"
-              class="mobile-hero   h-auto object-cover object-top hidden md:block lg:hidden md:w-card z-20 md:mx-auto "
+              class="mobile-hero hero-img  h-auto object-cover object-top hidden md:block lg:hidden md:w-card z-20 md:mx-auto "
             />
             <img
               src="../assets/images/mobilehero.png"
               alt="Header Image"
-              class="mobile-hero  h-auto object-cover object-top block md:hidden z-20 mx-auto  "
+              class="mobile-hero hero-img h-auto object-cover object-top block md:hidden z-20 mx-auto  "
             />
           </div>
         </main>
@@ -420,8 +420,89 @@
 </template>
 
 <script>
+import { TimelineLite, Power1 } from "gsap";
 export default {
   name: "Index",
+  mounted() {
+    const textTl = new TimelineLite();
+
+    textTl
+      .fromTo(
+        ".hero-img",
+        1,
+        {
+          x: 400,
+          zIndex: 30,
+          ease: Power1.easeInOut
+        },
+        {
+          x: 0,
+          zIndex: 30,
+          ease: Power1.easeInOut
+        }
+      )
+      .fromTo(
+        [".text1"],
+        1,
+        {
+          y: 200,
+          ease: Power1.easeInOut,
+          autoAlpha: 0
+        },
+        {
+          y: 0,
+          ease: Power1.easeInOut,
+          autoAlpha: 1
+        },
+        "-=1",
+        "Text-one"
+      )
+      .fromTo(
+        ".text2",
+        1,
+        {
+          y: 200,
+          ease: Power1.easeInOut,
+          autoAlpha: 0
+        },
+        {
+          y: 0,
+          ease: Power1.easeInOut,
+          autoAlpha: 1
+        },
+        "Text-two",
+        "Text-one+=1"
+      )
+      .fromTo(
+        ".text3",
+        1,
+        {
+          y: 200,
+          ease: Power1.easeInOut,
+          autoAlpha: 0
+        },
+        {
+          y: 0,
+          ease: Power1.easeInOut,
+          autoAlpha: 1
+        },
+        "Text-two+=1"
+      )
+      .fromTo(
+        ".item4",
+        1,
+        {
+          y: 200,
+          ease: Power1.easeInOut,
+          autoAlpha: 0
+        },
+        {
+          y: 0,
+          ease: Power1.easeInOut,
+          autoAlpha: 1
+        }
+      );
+  },
   components: {}
 };
 </script>
@@ -431,6 +512,16 @@ section {
   img {
     max-width: 100%;
     height: auto;
+  }
+  header {
+    @media screen and (min-width: 1367px) {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+    @media screen and (min-width: 1467px) {
+      padding-left: 25rem;
+      padding-right: 25rem;
+    }
   }
   main {
     //height: 90vh;
@@ -542,7 +633,7 @@ section {
       }
     }
     @media screen and (min-width: 1367px) {
-      margin-top: -24rem;
+      margin-top: -25rem;
       background-size: cover;
       background-repeat: no-repeat;
       background: url("../assets/svg/bg.svg");
@@ -550,6 +641,9 @@ section {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+    }
+    @media screen and (min-width: 1467px) {
+      margin-top: -26rem;
     }
 
     //.hero {

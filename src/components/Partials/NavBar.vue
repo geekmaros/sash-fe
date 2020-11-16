@@ -1,11 +1,11 @@
 <template>
   <nav
-    class="lg:flex justify-between items-center  pt-5 md:pt-23 md:pb-23 lg:pl-sash165   md:px-20 md:pr-10s lg:pr-sash165 "
+    class="nav-section lg:flex justify-between items-center  pt-5 md:pt-23 md:pb-23 lg:pl-sash165   md:px-20 md:pr-10s lg:pr-sash165 "
   >
     <div
       class="flex w-full items-center justify-between pb-3 md:pb-0 border-b md:border-b-0 px-sash22 md:px-0"
     >
-      <div class="logo">
+      <div class="logo " ref="logoSection1">
         <img
           src="../../assets/svg/mobilelogo.svg"
           alt=""
@@ -18,6 +18,7 @@
         />
       </div>
       <div
+        ref="logoSection2"
         class="nav-toggler bg-sashgray400 lg:hidden rounded-full p-3"
         @click="isNavOpen = !isNavOpen"
       >
@@ -50,6 +51,7 @@
       </div>
     </div>
     <div
+      ref="smSection"
       class="left-nav hidden lg:flex flex-col lg:flex-row lg:justify-end items-center lg:w-full pt-sash388 lg:pt-0  h-full lg:h-auto h-screen lg:h-auto"
     >
       <a href="#" class="mb-sash22 md:mb-0 ">
@@ -238,9 +240,25 @@
 </template>
 
 <script>
+import { TimelineLite } from "gsap";
 import NavSocialMediaIcon from "../UIElements/NavSocialMediaIcon";
+
 export default {
   name: "NavBar",
+  mounted() {
+    // const NavTl = new TweenMax();
+    // const { logoSection } = this.$refs;
+    //
+    // NavTl.to(logoSection, 1, { y: 50, autoAlpha: 0 });
+
+    const { logoSection1, logoSection2, smSection } = this.$refs;
+    const timeline = new TimelineLite();
+
+    timeline.from([logoSection1, logoSection2, smSection], 1, {
+      y: -200
+      // ease: Power1.easeInOut
+    });
+  },
   data() {
     return {
       isNavOpen: false
@@ -250,4 +268,15 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.nav-section {
+  @media screen and (min-width: 1367px) {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  @media screen and (min-width: 1467px) {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
+}
+</style>
