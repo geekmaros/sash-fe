@@ -436,7 +436,6 @@ export default {
         },
         {
           x: 0,
-          zIndex: 30,
           ease: Power1.easeInOut
         }
       )
