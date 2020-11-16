@@ -240,7 +240,7 @@
 </template>
 
 <script>
-import { TimelineLite } from "gsap";
+import { gsap } from "gsap";
 import NavSocialMediaIcon from "../UIElements/NavSocialMediaIcon";
 
 export default {
@@ -252,9 +252,8 @@ export default {
     // NavTl.to(logoSection, 1, { y: 50, autoAlpha: 0 });
 
     const { logoSection1, logoSection2, smSection } = this.$refs;
-    const timeline = new TimelineLite();
 
-    timeline.from([logoSection1, logoSection2, smSection], 1, {
+    gsap.from([logoSection1, logoSection2, smSection], 1, {
       y: -200
       // ease: Power1.easeInOut
     });

@@ -425,11 +425,10 @@
 </template>
 
 <script>
-import { TimelineLite, Power1 } from "gsap";
+import { gsap, Power1 } from "gsap";
 export default {
   name: "Index",
   mounted() {
-    const textTl = new TimelineLite();
     const {
       text1,
       text2,
@@ -440,80 +439,77 @@ export default {
       heroImg3
     } = this.$refs;
 
-    textTl
-      .fromTo(
-        [heroImg1, heroImg2, heroImg3],
-        1,
-        {
-          x: 400,
-          ease: Power1.easeInOut
-        },
-        {
-          x: 0,
-          ease: Power1.easeInOut
-        }
-      )
-      .fromTo(
-        text1,
-        1,
-        {
-          y: 200,
-          ease: Power1.easeInOut,
-          autoAlpha: 0
-        },
-        {
-          y: 0,
-          ease: Power1.easeInOut,
-          autoAlpha: 1
-        },
-        "-=1",
-        "Text-one"
-      )
-      .fromTo(
-        text2,
-        1,
-        {
-          y: 200,
-          ease: Power1.easeInOut,
-          autoAlpha: 0
-        },
-        {
-          y: 0,
-          ease: Power1.easeInOut,
-          autoAlpha: 1
-        },
-        "Text-two",
-        "Text-one+=1"
-      )
-      .fromTo(
-        text3,
-        1,
-        {
-          y: 200,
-          ease: Power1.easeInOut,
-          autoAlpha: 0
-        },
-        {
-          y: 0,
-          ease: Power1.easeInOut,
-          autoAlpha: 1
-        },
-        "Text-two+=1"
-      )
-      .fromTo(
-        item4,
-        1,
-        {
-          y: 200,
-          ease: Power1.easeInOut,
-          autoAlpha: 0
-        },
-        {
-          y: 0,
-          ease: Power1.easeInOut,
-          autoAlpha: 1
-        }
-      );
+    gsap.fromTo(
+      [heroImg1, heroImg2, heroImg3],
+      {
+        x: 400,
+        ease: Power1.easeInOut
+      },
+      {
+        x: 0,
+        ease: Power1.easeInOut,
+        duration: 1
+      }
+    );
+    gsap.fromTo(
+      text1,
+      {
+        y: 200,
+        ease: Power1.easeInOut,
+        autoAlpha: 0
+      },
+      {
+        y: 0,
+        ease: Power1.easeInOut,
+        autoAlpha: 1,
+        duration: 2
+      }
+    );
+    gsap.fromTo(
+      text2,
+      {
+        y: 200,
+        ease: Power1.easeInOut,
+        autoAlpha: 0
+      },
+      {
+        y: 0,
+        ease: Power1.easeInOut,
+        autoAlpha: 1,
+        delay: 1,
+        duration: 1.5
+      }
+    );
+    gsap.fromTo(
+      text3,
+      {
+        y: 200,
+        ease: Power1.easeInOut,
+        autoAlpha: 0
+      },
+      {
+        y: 0,
+        ease: Power1.easeInOut,
+        autoAlpha: 1,
+        delay: 1.5,
+        duration: 1.5
+      }
+    );
+    gsap.fromTo(
+      item4,
+      {
+        y: 200,
+        ease: Power1.easeInOut,
+        autoAlpha: 0
+      },
+      {
+        y: 0,
+        ease: Power1.easeInOut,
+        autoAlpha: 1,
+        delay: 2,
+        duration: 1.5
+      }
+    );
   },
   components: {}
 };
