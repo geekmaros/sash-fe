@@ -425,91 +425,91 @@
 </template>
 
 <script>
-import { gsap, Power1 } from "gsap";
+// import { gsap, Power1 } from "gsap";
 export default {
   name: "Index",
   mounted() {
-    const {
-      text1,
-      text2,
-      text3,
-      item4,
-      heroImg1,
-      heroImg2,
-      heroImg3
-    } = this.$refs;
-
-    gsap.fromTo(
-      [heroImg1, heroImg2, heroImg3],
-      {
-        x: 400,
-        ease: Power1.easeInOut
-      },
-      {
-        x: 0,
-        ease: Power1.easeInOut,
-        duration: 1
-      }
-    );
-    gsap.fromTo(
-      text1,
-      {
-        y: 200,
-        ease: Power1.easeInOut,
-        autoAlpha: 0
-      },
-      {
-        y: 0,
-        ease: Power1.easeInOut,
-        autoAlpha: 1,
-        duration: 2
-      }
-    );
-    gsap.fromTo(
-      text2,
-      {
-        y: 200,
-        ease: Power1.easeInOut,
-        autoAlpha: 0
-      },
-      {
-        y: 0,
-        ease: Power1.easeInOut,
-        autoAlpha: 1,
-        delay: 1,
-        duration: 1.5
-      }
-    );
-    gsap.fromTo(
-      text3,
-      {
-        y: 200,
-        ease: Power1.easeInOut,
-        autoAlpha: 0
-      },
-      {
-        y: 0,
-        ease: Power1.easeInOut,
-        autoAlpha: 1,
-        delay: 1.5,
-        duration: 1.5
-      }
-    );
-    gsap.fromTo(
-      item4,
-      {
-        y: 200,
-        ease: Power1.easeInOut,
-        autoAlpha: 0
-      },
-      {
-        y: 0,
-        ease: Power1.easeInOut,
-        autoAlpha: 1,
-        delay: 2,
-        duration: 1.5
-      }
-    );
+    // const {
+    //   text1,
+    //   text2,
+    //   text3,
+    //   item4,
+    //   heroImg1,
+    //   heroImg2,
+    //   heroImg3
+    // } = this.$refs;
+    //
+    // gsap.fromTo(
+    //   [heroImg1, heroImg2, heroImg3],
+    //   {
+    //     x: 400,
+    //     ease: Power1.easeInOut
+    //   },
+    //   {
+    //     x: 0,
+    //     ease: Power1.easeInOut,
+    //     duration: 1
+    //   }
+    // );
+    // gsap.fromTo(
+    //   text1,
+    //   {
+    //     y: 200,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 0
+    //   },
+    //   {
+    //     y: 0,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 1,
+    //     duration: 2
+    //   }
+    // );
+    // gsap.fromTo(
+    //   text2,
+    //   {
+    //     y: 200,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 0
+    //   },
+    //   {
+    //     y: 0,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 1,
+    //     delay: 1,
+    //     duration: 1.5
+    //   }
+    // );
+    // gsap.fromTo(
+    //   text3,
+    //   {
+    //     y: 200,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 0
+    //   },
+    //   {
+    //     y: 0,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 1,
+    //     delay: 1.5,
+    //     duration: 1.5
+    //   }
+    // );
+    // gsap.fromTo(
+    //   item4,
+    //   {
+    //     y: 200,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 0
+    //   },
+    //   {
+    //     y: 0,
+    //     ease: Power1.easeInOut,
+    //     autoAlpha: 1,
+    //     delay: 2,
+    //     duration: 1.5
+    //   }
+    // );
   },
   components: {}
 };
@@ -526,9 +526,13 @@ section {
       padding-left: 20rem;
       padding-right: 20rem;
     }
+    @media screen and (min-width: 1400px) {
+      padding-left: 15rem;
+      padding-right: 15rem;
+    }
     @media screen and (min-width: 1467px) {
-      padding-left: 25rem;
-      padding-right: 25rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
     }
   }
   main {

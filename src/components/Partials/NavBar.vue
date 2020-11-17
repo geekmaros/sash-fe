@@ -240,7 +240,7 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import NavSocialMediaIcon from "../UIElements/NavSocialMediaIcon";
 
 export default {
@@ -250,13 +250,13 @@ export default {
     // const { logoSection } = this.$refs;
     //
     // NavTl.to(logoSection, 1, { y: 50, autoAlpha: 0 });
-
-    const { logoSection1, logoSection2, smSection } = this.$refs;
-
-    gsap.from([logoSection1, logoSection2, smSection], 1, {
-      y: -200
-      // ease: Power1.easeInOut
-    });
+    //
+    // const { logoSection1, logoSection2, smSection } = this.$refs;
+    //
+    // gsap.from([logoSection1, logoSection2, smSection], 1, {
+    //   y: -200
+    //   // ease: Power1.easeInOut
+    // });
   },
   data() {
     return {
@@ -274,8 +274,8 @@ export default {
     padding-right: 20rem;
   }
   @media screen and (min-width: 1467px) {
-    padding-left: 25rem;
-    padding-right: 25rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
 </style>
