@@ -134,7 +134,7 @@
             class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper lg:flex justify-center items-center col-span-6  md:items-center order-2 md:order-1 md:mr-7s lg"
+              class="image-wrapper lg:flex justify-center items-center col-span-6 mt-8 md:mt-0 md:items-center order-2 md:order-1 md:mr-7s lg"
             >
               <img
                 class="hidden gif-lg md:block ml-auto  md:mr-16"
@@ -241,7 +241,7 @@
               </p>
             </div>
             <div
-              class="image-wrapper col-span-6 md:justify-self-start md:-ml-10 lg:ml-0"
+              class="image-wrapper col-span-6 md:justify-self-start mt-8 md:mt-0 md:-ml-10 lg:ml-8  "
             >
               <img
                 class="hidden md:block "
@@ -259,7 +259,7 @@
             class="tile-3 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper col-span-6 justify-self-end order-2 md:order-1 md:mr-7s"
+              class="image-wrapper col-span-6 justify-self-end order-2 mt-8 md:mt-0 md:order-1 md:mr-7s"
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"
@@ -354,7 +354,7 @@
               </p>
             </div>
             <div
-              class="image-wrapper col-span-6 justify-self-start md:-ml-10 lg:ml-0"
+              class="image-wrapper col-span-6 justify-self-start mt-8 md:mt-0 md:-ml-10 lg:ml-8"
             >
               <img
                 class="hidden md:block"
@@ -372,7 +372,7 @@
             class="tile-5 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper col-span-6 justify-self-end  order-2 md:order-1 md:mr-7s"
+              class="image-wrapper col-span-6 justify-self-end  order-2 mt-8 md:mt-0 md:order-1 md:mr-7s"
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"
