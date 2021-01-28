@@ -245,12 +245,12 @@
             >
               <img
                 class="hidden md:block "
-                src="../assets/images/tile2.png"
+                src="../assets/svg/SocialDiscovery.svg"
                 alt=""
               />
               <img
                 class="block md:hidden mx-auto"
-                src="../assets/images/tile2mobile.png"
+                src="../assets/svg/SocialDiscovery.svg"
                 alt=""
               />
             </div>
@@ -263,12 +263,12 @@
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"
-                src="../assets/images/tile3.png"
+                src="../assets/svg/ProductCatalogue.svg"
                 alt=""
               />
               <img
                 class="block md:hidden mx-auto"
-                src="../assets/images/tile3mobile.png"
+                src="../assets/svg/ProductCatalogue.svg"
                 alt=""
               />
             </div>
@@ -358,12 +358,12 @@
             >
               <img
                 class="hidden md:block"
-                src="../assets/images/tile4.png"
+                src="../assets/svg/Fulfilment.svg"
                 alt=""
               />
               <img
                 class="block md:hidden mx-auto"
-                src="../assets/images/tile4mobile.png"
+                src="../assets/svg/Fulfilment.svg"
                 alt=""
               />
             </div>
@@ -376,12 +376,12 @@
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"
-                src="../assets/images/tile5.png"
+                src="../assets/svg/ReportandAnalytics.svg"
                 alt=""
               />
               <img
                 class="block md:hidden mx-auto"
-                src="../assets/images/tile5mobile.png"
+                src="../assets/svg/ReportandAnalytics.svg"
                 alt=""
               />
             </div>
