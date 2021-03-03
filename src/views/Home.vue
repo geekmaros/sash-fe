@@ -33,13 +33,13 @@
             <h2><span>commerce</span> app.</h2>
           </div>
           <div
-            class="sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
+            class="sub-text md:max-w-2xl  text-sm leading-18 md:leading-30  text-sashgray md:text-summobile mt-3 md:mt-sash12 md:mt-sash133"
           >
             <p>
               Sash is a new way for customers to direct message,
             </p>
             <p>order from and pay merchants in a fun,</p>
-            <p>fast and seamless way.</p>
+            <p>fast and seamless ways.</p>
           </div>
 
           <div
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div
-          class="herosection image-wrapper w-full flex -ml-3 block md:hidden  mt-sash635 bg-white"
+          class="herosection image-wrapper w-full flex -ml-3 block md:hiddens  mt-sash635 bg-white"
         >
           <img
             src="../assets/images/Header-image.png"

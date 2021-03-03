@@ -61,7 +61,7 @@
             </div>
           </div>
           <div
-            class="herosection col-span-5  image-wrapper flex lg:self-center -ml-3 lg:absolute pl-10 top-0s right-0 lg:-mr-12 md:mt-16 lg:mt-0 bg-white"
+            class="herosection relative col-span-5  image-wrapper flex lg:self-center -ml-3 lg:absolutes pl-10 top-0s right-0 lg:-mr-12 md:mt-16 lg:mt-0 bg-white"
           >
             <img
               ref="heroImg1"
@@ -82,6 +82,32 @@
               alt="Header Image"
               class="mobile-hero hero-img h-auto object-cover object-top block md:hidden z-20 mx-auto  "
             />
+
+
+            <!-- <div class="absolute top-0 w-full h-full">
+              <img
+                ref="heroImg1"
+                src="../assets/svg/Home.svg"
+                alt="Header Image"
+                class="z-30 hero-img hidden  lg:block h-auto"
+              />
+            </div>
+            <div class="top-0 absolute w-full h-full">
+              <img
+                ref="heroImg1"
+                src="../assets/svg/Receipt.svg"
+                alt="Header Image"
+                class="z-30 hero-img hidden   lg:block h-auto"
+              />
+            </div>
+            <div class="top-0 absolute w-full h-full">
+              <img
+                ref="heroImg1"
+                src="../assets/svg/Card/Actions2.svg"
+                alt="Header Image"
+                class="z-30 hero-img hidden  lg:block h-auto"
+              />
+            </div> -->
           </div>
         </main>
         <div class="mobile-svg "></div>
@@ -123,7 +149,7 @@
             What can you do with Sash?
           </h1>
           <p
-            class="text-sm leading-18 md:text-2xl md:leading-30 text-center text-sashgray200 px-16 max-w-5xl md:max-w-2xl mx-auto mt-3"
+            class="text-sm leading-18 md:text-2xl md:leading-30 text-center text-sashgray200 px-16 max-w-5xl md:max-w-lgsash mx-auto mt-3"
           >
             Convert faster and improve productivity when you move your business
             conversations over from social media DMs.
@@ -134,7 +160,7 @@
             class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper lg:flex justify-center items-center col-span-6 mt-8 md:mt-0 md:items-center order-2 md:order-1 md:mr-7s lg"
+              class="image-wrapper lg:flex justify-center items-center col-span-6 mt-8 md:mt-0 md:items-center order-2 md:order-1 md:mr-7s lg:mr-24"
             >
               <img
                 class="hidden gif-lg md:block ml-auto  md:mr-16"
@@ -229,19 +255,20 @@
                 GROW ORGANICALLY
               </p>
               <h1
-                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-right font-black md:mt-sash10 px-32 md:px-0 md:max-w-xs"
+                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-right font-black md:mt-sash10 px-32 md:px-0 lg:flex justify-end flex-col"
               >
-                Social Discovery
+                <span class="md:mr-2 lg:mr-0">Social</span>  
+                <span>Discovery</span>
               </h1>
               <p
-                class="summary text-sashgray200 text-sm md:text-lg text-center md:text-right leading-20 md:leading-25 mt-sash10 mx-auto px-2 md:mx-0 max-w-xs"
+                class="summary text-sashgray200 text-sm md:text-lg text-center md:text-right leading-20 md:leading-25 mt-sash10 mx-auto px-2 md:mx-0 max-w-xs lg:max-w-sm"
               >
                 A new way for your customers and their friends to discover and
                 promote your business & products.
               </p>
             </div>
             <div
-              class="image-wrapper col-span-6 md:justify-self-start mt-8 md:mt-0 md:-ml-10 lg:ml-8  "
+              class="image-wrapper col-span-6 md:justify-self-start mt-8 md:mt-0 md:ml-10 lg:ml-24  "
             >
               <img
                 class="hidden md:block "
@@ -259,7 +286,7 @@
             class="tile-3 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper col-span-6 justify-self-end order-2 mt-8 md:mt-0 md:order-1 md:mr-7s"
+              class="image-wrapper col-span-6 justify-self-end order-2 mt-8 md:mt-0 md:order-1 md:mr-7s lg:mr-20"
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"
@@ -294,9 +321,10 @@
                 SHOWCASE YOUR HUSTLE
               </p>
               <h1
-                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs"
+                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs lg:flex justify-start flex-co"
               >
-                Product Catalogue
+                <span >Product</span>  
+                <span class="md:ml-2 ">Catalogue</span>
               </h1>
               <p
                 class="summary text-sashgray200 text-sm md:text-lg text-center md:text-left leading-20 md:leading-25 mt-sash10 mx-auto md:mx-0 max-w-xs"
@@ -354,7 +382,7 @@
               </p>
             </div>
             <div
-              class="image-wrapper col-span-6 justify-self-start mt-8 md:mt-0 md:-ml-10 lg:ml-8"
+              class="image-wrapper col-span-6 justify-self-start mt-8 md:mt-0 md:ml-10 lg:ml-24"
             >
               <img
                 class="hidden md:block"
@@ -372,7 +400,7 @@
             class="tile-5 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
-              class="image-wrapper col-span-6 justify-self-end  order-2 mt-8 md:mt-0 md:order-1 md:mr-7s"
+              class="image-wrapper col-span-6 justify-self-end  order-2 mt-8 md:mt-0 md:order-1 md:mr-7s lg:mr-20"
             >
               <img
                 class="hidden md:block ml-auto  md:mr-16"

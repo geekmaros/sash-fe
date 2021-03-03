@@ -166,6 +166,9 @@ module.exports = {
         bgtopmd: "25rem",
         bgtoplg: "15rem",
         card: "470px"
+      },
+      maxWidth: {
+        'lgsash': "50rem"
       }
     }
   },
