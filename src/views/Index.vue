@@ -321,10 +321,10 @@
                 SHOWCASE YOUR HUSTLE
               </p>
               <h1
-                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs lg:flex justify-start flex-co"
+                class="title text-sashblack text-xl leading-24 md:text-30px md:leading-36 text-center md:text-left font-black md:mt-sash10 px-16 md:px-0 md:max-w-xs lg:flex justify-start flex-col"
               >
                 <span >Product</span>  
-                <span class="md:ml-2 ">Catalogue</span>
+                <span class="md:ml-2 lg:ml-0 ">Catalogue</span>
               </h1>
               <p
                 class="summary text-sashgray200 text-sm md:text-lg text-center md:text-left leading-20 md:leading-25 mt-sash10 mx-auto md:mx-0 max-w-xs"
