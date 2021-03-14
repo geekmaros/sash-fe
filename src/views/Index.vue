@@ -157,7 +157,7 @@
         </div>
         <main class="mt-69">
           <div
-            class="tile-1 w-full flex flex-col mb-91 md:mb-0  md:justify-center items-center md:grid grid-cols-12"
+            class="tile-1 w-full flex flex-col mb-91 md:mb-120  md:justify-center items-center md:grid grid-cols-12"
           >
             <div
               class="image-wrapper lg:flex justify-center items-center col-span-6 mt-8 md:mt-0 md:items-center order-2 md:order-1 md:mr-7s lg:mr-24"
@@ -211,7 +211,7 @@
             </div>
           </div>
           <div
-            class="tile-2 mt-8s w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
+            class="tile-2 mt-8s w-full mb-91 md:mb-120 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
               class="tile-text text-right  justify-self-end col-span-6 md:mr-8"
@@ -283,7 +283,7 @@
             </div>
           </div>
           <div
-            class="tile-3 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
+            class="tile-3 w-full mb-91 md:mb-120 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
               class="image-wrapper col-span-6 justify-self-end order-2 mt-8 md:mt-0 md:order-1 md:mr-7s lg:mr-20"
@@ -335,7 +335,7 @@
             </div>
           </div>
           <div
-            class="tile-4 w-full mb-91 md:mb-0 flex flex-col justify-center items-center md:grid grid-cols-12"
+            class="tile-4 w-full mb-91 md:mb-120 flex flex-col justify-center items-center md:grid grid-cols-12"
           >
             <div
               class="tile-text text-right  justify-self-end col-span-6 md:mr-8"
