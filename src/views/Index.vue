@@ -28,8 +28,8 @@
             <div
               class="main-text text-sashblack text-mobiletext md:text-35 md:text-48px md:leading-112  ip:text-6xls font-black leading-tight"
             >
-              <h1 ref="text1" class="text1">A modern social</h1>
-              <h2 ref="text2" class="text2"><span>commerce</span> app.</h2>
+              <h1 ref="text1" class="text1 text-heading">A modern social</h1>
+              <h2 ref="text2" class="text2 text-heading"><span>commerce</span> app.</h2>
             </div>
             <div
               ref="text3"
@@ -576,11 +576,15 @@ section {
       white-space: nowrap;
     }
 
-    h2 {
+    .text-heading {
       position: relative;
+      z-index: 300;
+    }
+    .text2 span{
+      z-index: 300;
     }
 
-    h2:before {
+    .text2 span:before {
       content: "";
       position: absolute;
 
@@ -590,29 +594,41 @@ section {
       background: #30c684;
       bottom: 5px;
       transition: all 0.2s ease-out;
-      @media screen and (max-width: 900px) {
-        width: 9rem;
-        margin: -2px auto;
+      @media screen and (max-width: 600px) {
+        width: 8.9rem;
+        margin: -2px 0 0 0px;
         height: 7px;
-        display: none;
+        color: red;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+
       }
+      //@media screen and (max-width: 900px) {
+      //  width: 9rem;
+      //  margin: -2px auto;
+      //  height: 7px;
+      //}
 
       @media screen and (min-width: 768px) {
         width: 16rem;
         margin: 3px auto;
         height: 10px;
+        z-index: -1;
       }
 
       @media screen and (min-width: 1026px) {
         width: 22rem;
         margin: 3px auto;
         height: 10px;
+        z-index: -1;
       }
 
       @media screen and (min-width: 1027px) {
         width: 15rem;
         height: 10px;
         margin-left: 0;
+        z-index: -1;
       }
     }
 
